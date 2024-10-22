@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://h24rl64487wy"]
+
+[ext_resource type="PackedScene" uid="uid://ca4fiyft872b6" path="res://assets/scenes/protagonista.tscn" id="1_d26ry"]
+
+[node name="WORLD" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Protagonista" parent="." instance=ExtResource("1_d26ry")]

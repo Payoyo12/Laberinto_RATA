@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca4fiyft872b6"]
+
+[ext_resource type="Texture2D" uid="uid://dctmdxvubmv3h" path="res://assets/imagenes/Protagonista(RATA).png" id="1_d3fqv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jr71o"]
+size = Vector2(38, 13)
+
+[node name="Protagonista" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3, 0)
+texture = ExtResource("1_d3fqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 0.5)
+shape = SubResource("RectangleShape2D_jr71o")
